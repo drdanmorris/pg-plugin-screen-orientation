@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.contrib.phonegap.plugin.screenOrientation"
+           id="com.phonegap.plugin.screenOrientation"
       version="0.1.0">
+
 
     <name>ScreenOrientation</name>
     
@@ -27,7 +28,7 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ScreenOrientation">
-                <param name="android-package" value="com.contrib.phonegap.plugin.ScreenOrientation" />
+                <param name="android-package" value="com.phonegap.plugin.ScreenOrientation" />
             </feature>
         </config-file>
 
