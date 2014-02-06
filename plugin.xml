@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="com.tsukurusha.phonegap.plugins.ScreenOrientation"
+      version="0.1.0">
+
+    <name>ScreenOrientation</name>
+    
+    <keywords>phonegap,Screen Orientation,android</keywords>
+    
+    <description>
+      Phonegap plugin which adds support for Screen Orientation under Android. 
+    </description>
+    
+    <license>MIT</license>
+
+    <author>Github</author>
+
+
+    <engines>
+        <engine name="cordova" version=">=3.0" />
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+       <js-module src="www/pg-plugin-screen-orientation.js" name="screenOrientation">
+          <clobbers target="ScreenOrientation" />
+       </js-module>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ScreenOrientation">
+                <param name="android-package" value="com.tsukurusha.phonegap.plugins.ScreenOrientation" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ScreenOrientation.java" target-dir="com/tsukurusha/phonegap/plugins/ScreenOrientation" />
+
+    </platform>
+</plugin>
