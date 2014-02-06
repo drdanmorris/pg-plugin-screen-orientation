@@ -28,7 +28,7 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ScreenOrientation">
-                <param name="android-package" value="com.phonegap.plugin.ScreenOrientation" />
+                <param name="android-package" value="com.phonegap.plugin.screenOrientation.ScreenOrientation" />
             </feature>
         </config-file>
 
@@ -36,3 +36,4 @@
 
     </platform>
 </plugin>
+
