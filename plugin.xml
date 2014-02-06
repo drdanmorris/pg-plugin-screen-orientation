@@ -13,9 +13,7 @@
     </description>
     
     <license>MIT</license>
-
     <author>Github</author>
-
 
     <engines>
         <engine name="cordova" version=">=3.0" />
@@ -33,7 +31,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/ScreenOrientation.java" target-dir="com/tsukurusha/phonegap/plugins/ScreenOrientation" />
+        <source-file src="src/android/ScreenOrientation.java" target-dir="src/com/tsukurusha/phonegap/plugins/ScreenOrientation" />
 
     </platform>
 </plugin>
